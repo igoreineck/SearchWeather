@@ -2,6 +2,7 @@ var request = require('request'),
     express = require('express'),
     app     = express();
 
+app.set('port', (process.env.PORT || 3000));
 app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + "/public"));
@@ -24,6 +25,6 @@ app.get("/index", function(req, res){
     });
 });
 
-app.listen(3000, function(){
-    console.log("Server is running!!");
+app.listen(app.get('port'), function(){
+    console.log('Node app is running on port', app.get('port'));
 })
