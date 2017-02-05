@@ -1,0 +1,42 @@
+<% include partials/header %>
+
+<div class="container" id="IndexContainer">
+	<div class="IndexDiv">
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<td><h2>Weather in <%= data.name %>, <%= data.sys.country %></h2></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>Temperature: </strong><%= data.main.temp %></td>
+					</tr>
+					<tr>
+						<td><strong>Minimal Temperature: </strong><%= data.main.temp_min %></td>
+					</tr>
+					<tr>
+						<td><strong>Maximal Temperature: </strong><%= data.main.temp_max %></td>
+					</tr>
+					<tr>
+						<td><strong>Humidity: </strong><%= data.main.humidity %>%</td>
+					</tr>
+					<tr>
+						<td><strong>Weather: </strong><%= data.weather[0].main %></td>
+					</tr>
+					<tr>
+						<td><strong>Weather Description: </strong><%= data.weather[0].description %></td>
+					</tr>
+					<tr>
+						<td><img src="http://openweathermap.org/img/w/02d.png"></td>
+					</tr>
+					<br>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<a href="/">Search Again</a>
+</div>
+
+<% include partials/footer %>

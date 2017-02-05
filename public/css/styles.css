@@ -1,0 +1,23 @@
+#HomeContainer {
+	display: block;
+	text-align: center;
+}
+
+#HomeDiv {
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin: 100px auto;
+	width: 600px;
+}
+
+#IndexContainer {
+	display: block;
+}
+
+form {
+	margin: 10%;
+}
+
+h1 {
+	margin-top: 50px;
+}

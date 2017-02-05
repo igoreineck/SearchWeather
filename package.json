@@ -1,0 +1,20 @@
+{
+  "name": "sunset_time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodejs app.js"
+  },
+  "author": "Igor Eineck",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "heroku": "^0.2.0",
+    "http": "0.0.0",
+    "request": "^2.79.0"
+  }
+}

@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+
+<div class="container" id="HomeContainer">
+	<div class="center-block" id="HomeDiv">
+		<form class="form-horizontal" method="GET" action="/index">
+			<div class="form-group">
+				<h1>Search weather in your City</h1>
+			</div>
+			<div class="form-group">
+				<input type="text" placeholder="City" name="city" required>
+				<input type="text" placeholder="Country" name="country" required>
+				<input class="btn btn-primary" type="submit" value="Search">
+			</div>
+		</form>
+	</div>
+</div>
+
+<% include partials/footer %>
