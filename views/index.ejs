@@ -11,13 +11,18 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><strong>Temperature: </strong><%= data.main.temp %></td>
+						<td>
+							<img src='http://openweathermap.org/img/w/<%=data.weather[0].icon%>.png'>
+							<strong><%= data.main.temp %> ºC</strong>
+							<br>
+							<strong>get at </strong><%= new Date() %>
+						</td>
 					</tr>
 					<tr>
-						<td><strong>Minimal Temperature: </strong><%= data.main.temp_min %></td>
+						<td><strong>Wind: </strong><%= data.wind.speed %> m/s</td>
 					</tr>
 					<tr>
-						<td><strong>Maximal Temperature: </strong><%= data.main.temp_max %></td>
+						<td><strong>Pressure: </strong><%= data.main.pressure %> hpa</td>
 					</tr>
 					<tr>
 						<td><strong>Humidity: </strong><%= data.main.humidity %>%</td>
@@ -28,15 +33,13 @@
 					<tr>
 						<td><strong>Weather Description: </strong><%= data.weather[0].description %></td>
 					</tr>
-					<tr>
-						<td><img src="http://openweathermap.org/img/w/02d.png"></td>
-					</tr>
-					<br>
 				</tbody>
 			</table>
 		</div>
 	</div>
-	<a href="/">Search Again</a>
+	<form action="/" method="get">
+		<button class="btn btn-primary" value="submit">Search Again</button>
+	</form>
 </div>
 
 <% include partials/footer %>
