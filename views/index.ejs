@@ -33,13 +33,24 @@
 					<tr>
 						<td><strong>Weather Description: </strong><%= data.weather[0].description %></td>
 					</tr>
+					<tr>
+						<td>
+							<div id="search">
+								<form action="/" method="get">
+									<button class="btn btn-primary" value="submit">Search Again</button>
+								</form>
+								<form action="/index/page2" method="get">
+
+									<button class="btn btn-primary" value="submit">More few days</button>
+								</form>
+							</div>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
 	</div>
-	<form action="/" method="get">
-		<button class="btn btn-primary" value="submit">Search Again</button>
-	</form>
 </div>
+
 
 <% include partials/footer %>

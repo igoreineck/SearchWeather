@@ -1,30 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Pangolin');
 
 #HomeContainer {
+	box-shadow: 0px 0px 10px black;
 	display: block;
+	margin: 30px;
+	padding: 30px;
 	text-align: center;
 }
 
 #HomeDiv {
-	border: 1px solid black;
 	box-sizing: border-box;
 	margin: 100px auto;
-	width: 600px;
+	width: 400px;
 }
 
 #IndexContainer {
 	display: block;
 }
 
-form {
-	margin: 10%;
+#search button {
+	display: block;
+	float: left;
+	text-align: center;
 }
 
 h1, h2, h3 {
 	font-family: 'Pangolin', cursive;
-	margin-top: 50px;
 }
 
-table {
-	margin: 40px auto;
+.table {
+	margin: 30px auto;
+	width: 400px;
+}
+
+p {
+	padding-top: 100px;
 }
