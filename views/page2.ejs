@@ -1,19 +1,65 @@
 <% include partials/header %>
 
 <div class="container" id="IndexContainer">
+
+	<h1>NOT FINISHED YET!</h1>
+	
 	<div class="IndexDiv">
 		<div class="table-responsive">
 			<table class="table table-bordered">
 				<thead>
 					<tr>
-						<td><h2>Weather in <%= data.name %>, <%= data.sys.country %></h2></td>
+						<td><h2>Weather in <%= forecast.city.name %>, <%= forecast.city.country %></h2></td>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>
-							<img src='http://openweathermap.org/img/w/<%=data.weather[0].icon%>.png'>
-							<strong>get at </strong><%= new Date() %>
+							<h2>2th</h2>
+							<strong>Temperature: </strong><%= forecast.list[8].main.temp %>
+							<strong>Minimal Temperature: </strong><%= forecast.list[8].main.temp_min %>
+							<strong>Maximal Temperature: </strong><%= forecast.list[8].main.temp_max %>
+							<strong>Humidity: </strong><%= forecast.list[8].main.humidity %>%
+							<strong>Weather: </strong><%= forecast.list[8].weather[0].main %>
+							<strong>Weather Description: </strong><%= forecast.list[8].weather[0].description %>
+							<strong>Date: </strong><%= forecast.list[8].dt_txt %>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2>3th</h2>
+							<strong>Temperature: </strong><%= forecast.list[16].main.temp %>
+							<strong>Minimal Temperature: </strong><%= forecast.list[16].main.temp_min %>
+							<strong>Maximal Temperature: </strong><%= forecast.list[16].main.temp_max %>
+							<strong>Humidity: </strong><%= forecast.list[16].main.humidity %>%
+							<strong>Weather: </strong><%= forecast.list[16].weather[0].main %>
+							<strong>Weather Description: </strong><%= forecast.list[16].weather[0].description %>
+							<strong>Date: </strong><%= forecast.list[16].dt_txt %>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2>4th</h2>
+							<strong>Temperature: </strong><%= forecast.list[24].main.temp %>
+							<strong>Minimal Temperature: </strong><%= forecast.list[24].main.temp_min %>
+							<strong>Maximal Temperature: </strong><%= forecast.list[24].main.temp_max %>
+							<strong>Humidity: </strong><%= forecast.list[24].main.humidity %>%
+							<strong>Weather: </strong><%= forecast.list[24].weather[0].main %>
+							<strong>Weather Description: </strong><%= forecast.list[24].weather[0].description %>
+							<strong>Date: </strong><%= forecast.list[24].dt_txt %>
+
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2>5th</h2>
+							<strong>Temperature: </strong><%= forecast.list[32].main.temp %>
+							<strong>Minimal Temperature: </strong><%= forecast.list[32].main.temp_min %>
+							<strong>Maximal Temperature: </strong><%= forecast.list[32].main.temp_max %>
+							<strong>Humidity: </strong><%= forecast.list[32].main.humidity %>%
+							<strong>Weather: </strong><%= forecast.list[32].weather[0].main %>
+							<strong>Weather Description: </strong><%= forecast.list[32].weather[0].description %>
+							<strong>Date: </strong><%= forecast.list[32].dt_txt %>
 						</td>
 					</tr>
 				</tbody>
